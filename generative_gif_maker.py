@@ -5,8 +5,8 @@ import numpy
 from string import Template
 
 
-startFile = 'me.jpg'
-destinationFile = 'me.gif'
+startFile = 'panda.jpg'
+destinationFile = 'panda.gif'
 imagePath = Template('./assets/$fileName')
 gifPath = Template('./gifs/$fileName')
 image = Image.open(imagePath.substitute(fileName=startFile))
