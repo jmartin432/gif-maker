@@ -5,8 +5,8 @@ import numpy
 from string import Template
 
 
-startFile = 'lenna.png'
-destinationFile = 'lenna.gif'
+startFile = 'me.jpg'
+destinationFile = 'me.gif'
 imagePath = Template('./assets/$fileName')
 gifPath = Template('./gifs/$fileName')
 image = Image.open(imagePath.substitute(fileName=startFile))
@@ -17,6 +17,7 @@ pixels = image.load()
 images = []
 
 for k in range(20):
+    print(k)
     for i in range(width):
         for j in range(height):
             r, g, b = pixels[i, j]
